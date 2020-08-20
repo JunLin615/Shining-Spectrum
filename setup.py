@@ -7,4 +7,4 @@ setup(name='shiningspectrum',
       author='JunLin615,BJUT  in China',
       license='MIT',
       packages=['shiningspectrum'],
-      install_requires=['numpy', 'rampy', 'peakutils', 'pywt', 'os', 'pickle', 're'])
+      install_requires=['numpy', 'rampy', 'peakutils', 'pywt', 'os', 'pickle', 're', 'scipy', 'math', 'ramannoodles', 'lmfit', 'multiprocessing', 'time'])
