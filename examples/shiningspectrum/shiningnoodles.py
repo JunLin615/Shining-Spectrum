@@ -114,6 +114,15 @@ def shining2noodles(all_spectrum):
 class component_testing:
 
     def __init__(self, height=0.1, prominence_unknow='auto', prominence_know='auto', distance=10, precision=0.03 , peak_algorithm = "noodles"):
+        """
+
+        :param height: 峰值高度阈值
+        :param prominence_unknow: 对待测物寻峰时，使用的prominence参数，可以是"auto"或者一个浮点数。
+        :param prominence_know: 对光谱数据库进行寻峰时，使用的prominence参数，可以是"auto"或者一个浮点数。
+        :param distance: 峰之间的最小水平距离，如果距离小于指定值，会从高度低的峰开始删除，直到满足限制。
+        :param precision: 比对峰时的精确度，数字越小越精确。
+        :param peak_algorithm: 可以定义为"noodles"或“shining”，更改此参数会使用不同的寻峰算法，"shining"速度很快，"noodles"精细一些。
+        """
         self.height = height
         self.prominence_unknow = prominence_unknow
         self.prominence_know = prominence_know
