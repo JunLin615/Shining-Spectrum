@@ -67,6 +67,25 @@ def data_extraction(data_list):
 
     return list_spectrum
 
+def data_extraction_abstract(data_list):
+    """
+    将shining格式光谱文件（.txt或.p）对应的列表中提取出数据摘要
+    :param data_list:
+    :return:
+    """
+    abstract = {}
+    # 将.p格式光谱文件对应的列表中提取出光谱数据
+    for row in data_list[1:10]:
+        row = row.replace('\n', '')
+        element = row.split(':')
+        abstract.update({element[0]:element[1]})
+
+
+
+
+    return abstract
+
+
 
 def read_data(file_name, database_name):
     """
