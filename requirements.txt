@@ -1,0 +1,7 @@
+numpy
+rampy
+peakutils
+pywavelets
+scipy
+ramannoodles
+lmfit
